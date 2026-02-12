@@ -6,4 +6,4 @@ RUN npm install -g openclaw
 
 ENV HOME=/root
 
-CMD sh -c "openclaw gateway start --bind 0.0.0.0 --port $PORT"
+CMD sh -c "`npm bin -g`/openclaw gateway start --bind 0.0.0.0 --port $PORT"
